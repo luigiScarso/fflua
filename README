@@ -1,0 +1,18 @@
+Initial SWIG-based Lua binding for fontforge.
+The binding is based on 
+fontforge commit nr. 6f0f5a54c56f56a2b38df032e1bb95f1f11c56ee,
+with freetype 2.4.9 .
+The goal is to add another scripting language (Lua) to fontforge as the native one and Python, and not
+to add a Lua interpreter to FontForge --- basically it'a a Lua estension and not a FontForge extension.
+
+You need to have fontforge with development files (lib & header).
+If necessary, compile and install the source under /opt/fontforge 
+
+The Lua script 
+svg2otf.lua
+take an OTF font of mine (Concrete.otf) and makes an svg without error --- which doesn't mean that
+the otf and svg  files are ok.
+
+
+ 
+
